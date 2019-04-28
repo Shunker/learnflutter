@@ -78,15 +78,8 @@ class _CartPageState extends State<CartPage> {
         ));
   }
 
-  List<String> getDataList() {
-    List<String> list = [];
-    for (int i = 0; i < 30; i++) {
-      list.add(i.toString());
-    }
-    return list;
-  }
 
-  List<Widget> getWidgetList({Map item}) {
+  List<Widget> getWidgetList() {
     return hotMovie
         .map((item) => GestureDetector(
               child: getItemContainer(item),
